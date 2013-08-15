@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/candidate_info_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/textView_candidate_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/textView_candidate_name"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView_candidate_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/photo_content_description" />
+
+    <TextView
+        android:id="@+id/textView_candidate_office"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_candidate_name"
+        android:text="@string/textView_candidate_office"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_candidate_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_candidate_photo"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView_candidate_promises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ratingBar_candidate_rating"
+        android:layout_marginTop="19dp"
+        android:text="@string/textView_candidate_promises"
+        android:textSize="15dp" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_candidate_promises"
+        android:layout_above="@+id/RelativeLayout01"
+        android:layout_marginTop="35dp" >
+
+        <TextView
+            android:id="@+id/textView_candidate_statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_candidate_statement"
+            android:textSize="15dp" />
+        
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView_candidate_statement_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_candidate_promises"
+        android:layout_marginTop="14dp"
+        android:text="@string/textView_candidate_statement_message"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_candidate_promises_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ratingBar_candidate_rating"
+        android:text="@string/textView_candidate_promises_message"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/button_delete_candidate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="deleteCandidateButton"
+            android:text="@string/button_delete_candidate"
+            android:textColor="@color/opaque_red"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_send_tweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="sendTweet"
+            android:text="@string/button_send_tweet"
+            android:textColor="@color/opaque_red"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_send_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="sendEmail"
+            android:text="@string/button_send_email"
+            android:textColor="@color/opaque_red"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

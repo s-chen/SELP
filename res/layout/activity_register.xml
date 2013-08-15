@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView_enter_student_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/textView_enter_student_number"
+        android:textColor="@color/opaque_red"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_student_number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_enter_student_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="@string/editText_student_number" />
+
+    <Button
+        android:id="@+id/button_confirm_register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_student_number"
+        android:layout_below="@+id/editText_student_number"
+        android:layout_marginTop="33dp"
+        android:text="@string/button_confirm_register"
+        android:textColor="@color/opaque_red"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="confirmRegister" />
+
+</RelativeLayout>

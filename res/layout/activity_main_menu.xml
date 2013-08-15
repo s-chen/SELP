@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView_vote"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/image_content_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/vote" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imageView_vote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:onClick="register_student_number"
+        android:text="@string/button_register"
+        android:textColor="@color/opaque_red"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_about"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_register"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="18dp"
+        android:text="@string/button_about"
+        android:textColor="@color/opaque_red"
+        android:textSize="30dp"
+        android:textStyle="bold" 
+        android:onClick="aboutApp"/>
+
+    <Button
+        android:id="@+id/button_display_candidates"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/button_about"
+        android:layout_alignLeft="@+id/button_about"
+        android:layout_marginBottom="18dp"
+        android:onClick="displayCandidates"
+        android:text="@string/button_display_candidates"
+        android:textColor="@color/opaque_red"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
